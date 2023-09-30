@@ -1,0 +1,31 @@
+{
+    "Custom React Component": {
+      "scope": "javascriptreact",
+      "prefix": "rc",
+      "body": [
+        "import React from \"react\";",
+        "",
+        "export function ${TM_FILENAME_BASE}({ children }) {",
+        "  return <$1>{children}</$1>;",
+        "}"
+      ],
+      "description": "Create a new React Component"
+    },
+    "Custom Typescript Component": {
+      "scope": "typescriptreact",
+      "prefix": "rtc",
+      "body": [
+        "import React from \"react\";",
+        "",
+        "interface ${TM_FILENAME_BASE}Props {",
+        "  children?: React.ReactNode;",
+        "}",
+        "",
+        "export function ${TM_FILENAME_BASE}({ children }: React.PropsWithChildren<${TM_FILENAME_BASE}Props>) {",
+        "  return <$1>{children}</$1>;",
+        "}"
+      ],
+      "description": "Create a new React Typescript Component"
+    }
+  }
+  
